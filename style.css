@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo-audi {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    z-index: 2; 
+}
+
+
+.bg-text {
+    position: relative; /* Setăm poziția relativă pentru a putea poziționa elementele interioare */
+    width: 100%; /* Lățimea maximă a containerului */
+    height: 800px; /* Înălțimea containerului (poate fi ajustată la nevoie) */
+    background-size: cover; /* Ajustăm dimensiunea imaginii de fundal pentru a umple containerul */
+    background-position: center; /* Centrăm imaginea de fundal */
+}
+
+
+
+.bg-text img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+    /*opacity: 0.7;  Opacitatea imaginii de fundal pentru a se vedea textul peste ea */
+}
+
+.bg-text h1 {
+    position: relative; 
+    text-align: initial;
+    padding: 90px; /* Spatiere in jurul textului */
+    color: rgb(84, 66, 66); /* Culoarea textului */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-text p {
+   /*  position: absolute; Setăm poziția relativă pentru a permite poziționarea */
+    bottom: 0;
+    right: 0;
+    color: white;
+    text-align: end;
+    
+}
+
+
+
+
+/* ------ Stilizare pentru navbar ---------- */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    padding: 10px; 
+}
+
+.logo-audi {
+    float: left; 
+    height: 40px; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* meniul la dreapta */
+    
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(84, 66, 66); /* culoarea textului de pe meniu */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #98080898; 
+}
+
+/*   ------------------ Sectiune Design---------------------------------------- */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizare sectiune de design */
+.design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Stilizare text-container */
+.text-container {
+    text-align: center;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+/*   ------------------ Sectiune Features---------------------------------------- */
+
+
+.features {
+    background-image: url('images/audi-3.avif'); /
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff; /* Culoarea textului */
+    text-align: center;
+    margin: 0; /* Elimin marginile exterioare */
+    padding: 0; /* Elimin marginile interioare */
+    height: 100vh; /* Intreaga inaltime a ecranului */
+}
+
+.feature-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundal semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: left; /* Alinierea textului la stanga */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tech-specs {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Linia orizontala */
+    padding-bottom: 10px; /* Spatiu intre linia orizontala si text */
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+
+/*   ------------------ Sectiune Techology---------------------------------------- */
+
+.technology {
+   text-align: center; 
+   height: 100vh;
+   
+}
+
+.technology h2 {
+    margin: 0;
+    font-size: 24px;
+    
+    margin-top: 80px;
+}
+
+.tech-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.tech-item {
+    flex-basis: calc(33.33% - 20px); /* Afisez cate 3 carduri pe rand */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.tech-item img {
+    max-width: 90%;
+    height: auto;
+}
+
+.tech-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.tech-item p {
+    font-size: 14px;
+    color: #777;
+}
+/* Stilizare butoane "Read More" */
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; /* Adaug spatiu intre buton si continutul div-ului */
+}
+
+/* Efect de hover */
+.read-more-button:hover {
+    background-color: #333; 
+    color: #fff; 
+}
+
+/*------------------------------------------------------------ */
+
+body {
+    
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.calculator {
+    background-color: #fff;
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056a6;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
+/* ------------------------------------------Stilizare pentru footer -------------------------------------------------*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  
+    
+}
+
+/* Stilizare pentru div-urile din footer */
+
+.text-footer {
+    margin-bottom: 20px; /* Adaug spatiu intre div-ul cu clasa "text-footer" si div-ul cu clasa "container-text" */
+}
+.footer-column {
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+/* Stilizare pentru lista (ul) din footer */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Stilizare pentru elementele listei (li) din footer */
+li {
+    margin-bottom: 5px;
+    
+}
+
+.container-text {
+    margin-top: 50px; 
+    border-top: 1px solid #ccc; 
+    padding-top: 20px; 
+}
+
+
+
+.paragraph1 {
+    
+    text-align: left; 
+    margin-right: 5px; 
+    font-size: 10px;
+}
+
+.paragraph2 {
+    text-align: left; 
+    margin-right: 5px; 
+    font-size: 15px;
+}
+

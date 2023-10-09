@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adaugam metatag-urile pentru Google -->
+    <title>Audi lighting</title>
+    <meta name="description" content="Site dedicat masinilor" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<section class="gs-text">
+    <img src="images/audi-logo-png.gif" alt="Logo" class="logo-audi">
+    
+    <div class="bg-text">
+        <img src="images/audi-4.avif" alt="Imagine de fundal">
+        <h1>Elevated styling. Electrifying possibilities.</h1>
+        <p>Audi: Progress Through Technology</p>
+        <p>Discover the future of automotive excellence with Audi's latest innovation.</p>
+
+<!-------- Navbar --------->
+        <nav>
+            
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        
+ <!--  ----------------------------  -->
+ 
+    </div>
+</section>
+
+
+<!--------Sectiunea Design----------------------->
+
+
+<section class="design" id="design">
+    <div class="image-container">
+        <img src="images/audi-design-1.avif" alt="Audi Design 1" id="audi-image">
+        <button onclick="changeImage()">Next Image</button>
+    </div>
+
+    <div class="text-container">
+        <h1>Audi Design</h1>
+        <p id="description">
+            The design philosophy of Audi cars embodies a harmonious blend of innovation, elegance, and performance. At the core of Audi's design ethos is a commitment to progressive, modern aesthetics that evolve with the times while maintaining a timeless appeal.
+        </p>
+    </div>
+</section>
+
+    <!--------------End Design----------------------->
+
+
+    <!--------Features----------------------->
+
+    <section class="features" id="features">
+        <div class="feature-container">
+            <h2>Tech Specs</h2>
+            <dl class="tech-specs">
+                <div class="spec">
+                    <dt>Engine</dt>
+                    <dd>5204</dd>
+                </div>
+                <div class="spec">
+                    <dt>Engine displacement</dt>
+                    <dd>5204</dd>
+                </div>
+                <div class="spec">
+                    <dt>Maximum power</dt>
+                    <dd>560 Nm @ 6500 rpm</dd>
+                </div>
+                <div class="spec">
+                    <dt>Maximum torque</dt>
+                    <dd>601.4 bhp @ 8250 rpm</dd>
+                </div>
+                <div class="spec">
+                    <dt>Turning radius</dt>
+                    <dd>5.9m</dd>
+                </div>
+                <div class="spec">
+                    <dt>No. of cylinders</dt>
+                    <dd>610</dd>
+                </div>
+                <div class="spec">
+                    <dt>Drive Type</dt>
+                    <dd>AWD</dd>
+                </div>
+                <div class="spec">
+                    <dt>Fuel Supply</dt>
+                    <dd>No</dd>
+                </div>
+                <div class="spec">
+                    <dt>Turbo Charger</dt>
+                    <dd>No</dd>
+                </div>
+                <div class="spec">
+                    <dt>Super Charger</dt>
+                    <dd>Yes</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+        
+
+
+    <section class="technology" id="technology">
+        <h2>Technology and Performance</h2>
+        <div class="tech-details">
+            <div class="tech-item">
+                <img src="images/audi-engine.webp" alt="Motor Audi">
+                <h3>Motor Puternic</h3>
+                <p>
+                    Audi engines are known for their blend of power, efficiency, and innovative technology. They come in various configurations, including four-cylinder, V6, and V8 options, with turbocharging and supercharging for improved performance. Audi engines often feature direct fuel injection, lightweight construction, and Quattro all-wheel-drive systems in many models, delivering a dynamic driving experience with a reputation for both performance and fuel efficiency.</p>
+                    <button class="read-more-button">Read more</button>
+                </div>
+            <div class="tech-item">
+                <img src="images/tehnologia-quattro.jpg" alt="Suspensie Audi">
+                <h3>Quattro technology</h3>
+                <p>Quattro technology is a brand name used by the German automobile manufacturer Audi to refer to its all-wheel-drive (AWD) system. Audi introduced the Quattro system in the early 1980s and has since become renowned for its performance and traction capabilities, particularly in challenging road conditions.In summary, Quattro technology is Audi's renowned all-wheel-drive system, known for its ability to provide superior traction, stability, and performance in various driving conditions. </p>
+                <button class="read-more-button">Read more</button>
+            </div>
+            <div class="tech-item">
+                <img src="images/virtual-cockpit.avif" alt="Tehnologie Audi">
+                <h3>Virtual Cockpit</h3>
+                <p>Audi’s Virtual Cockpit may sound like something out of a space simulator, but it’s such an amazing addition to your car that you’ll wonder how you ever managed without it. 
+                    The Audi Virtual Cockpit replaces your standard analogue driver’s instruments with a set of digital dials on a 12.3-inch display tucked neatly behind the steering wheel. It’ll display all sorts of things like your speedometer, rev counter, 3D navigation software, radio, media information, assorted driver assistance systems, caller ID and car settings.</p>
+                    <button class="read-more-button">Read more</button>
+                </div>
+        </div>
+    </section>
+
+<!------------------------Gallery----------------------->
+
+<div class="calculator">
+
+    <h1>Fuel Consumption Calculator</h1>
+    <label for="km">Kilometers covered :</label>
+    <input type="number" id="km" placeholder="Ex: 300">
+
+    <label for="litri">Amount of fuel consumed (litres):</label>
+    <input type="number" id="litri" placeholder="Ex: 20">
+
+    <button id="calcButton">View results</button>
+
+    <div id="result"></div>
+</div>
+    
+    
+
+
+    <footer>
+
+    <div class="footer-columns-container">
+
+        <div class="footer-column">
+            <ul>
+                <li>Explore</li>
+                <li>Models</li>
+                <li>Audi Sport</li>
+                <li>What is e-tron®</li>
+                <li>SUV Models</li>
+                <li>Audi at your Door</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li>Shop</li>
+                <li>Special Offers</li>
+                <li>Find a dealer</li>
+                <li>New inventory</li>
+                <li>Pre-owned inventory</li>
+                <li>Certified pre-owned</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li>Buy</li>
+                <li>Contain value</li>
+                <li>Leasing</li>
+                <li>Financing</li>
+                <li>Apply fct dealer</li>
+                <li>Trade-or financing</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li>Own</li>
+                <li>myAudi</li>
+                <li>About myAudi</li>
+                <li>Audi Financial Services</li>
+                <li>Audi collection store</li>
+                <li>Audi collection store</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li>Support</li>
+                <li>Contact Us</li>
+                <li>Help</li>
+                <li>About Audi</li>
+                <li>Careers</li>
+                <li>Newsroom</li>  
+            </ul>
+        </div>
+
+    </div>
+
+
+
+        <div class="container-text">
+            <p class="paragraph1">© 2023 Audi of America. All rights reserved.</p>
+            <p class="paragraph2">Audi of America takes efforts to ensure the accuracy of information on the general vehicle information pages. Models are shown for illustration purposes only and may include features that are not available on the US model. As errors may occur or availability may change, please see dealer for complete details and current model specifications.</p>
+        </div>
+        
+    </footer>
+
+    
+
+
+    <script src="index.js"></script>
+ 
+</body>
+</html>
